@@ -1,0 +1,55 @@
+/* Google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;300;400&display=swap');
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0px;
+  background-color: #80D0C7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-area {
+  margin-top: 30px;
+  border-radius: 15px;
+  background-color: #0093E9;
+  width: 300px;
+  height: 440px;
+}
+
+.text-area {
+  background-color: #9df4ea;
+  outline: none;
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  width: 275px;
+  height: 50px;
+  border-radius: 5px;
+  border: none;
+  margin: 10px;
+}
+
+.button-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-row > button {
+  background-color: #80D0C7;
+  border: none;
+  border-radius: 27px;
+  margin:  0px 5px;
+  width: 55px;
+  height: 55px;
+  font-size: 18px;
+  font-weight: 700;
+
+}
+
+.button-row > button:hover {
+  background-color: #a8f8f0;
+}
