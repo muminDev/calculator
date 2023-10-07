@@ -1,16 +1,18 @@
-let calculation = '';
-
-function calculate(amount) {
-  calculation += amount
-  console.log(calculation);  
+function appendToDisplay(value) {
+  const display = document.getElementById('display');
+  display.value += value;
 }
 
-function evaluate() {
-  calculation = eval(calculation);
-  console.log(calculation);  
+function clearDisplay() {
+  const display = document.getElementById('display');
+  display.value = '';
 }
 
-function clear() {
-  calculation = '';
-  console.log(calculation);
+function calculateResult() {
+  const display = document.getElementById('display');
+  try {
+      display.value = eval(display.value);
+  } catch (error) {
+      display.value = 'Error';
+  }
 }
